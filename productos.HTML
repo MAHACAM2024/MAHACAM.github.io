@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Productos - MAHACAM</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --verde-hoja: #8aae7c;
+            --verde-oliva: #b9cc8a;
+            --blanco-puro: #ffffff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: var(--verde-oliva);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li {
+            margin-right: 20px;
+        }
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .logo-nav {
+            width: 150px;
+            height: auto;
+        }
+        .main-title {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--verde-hoja);
+        }
+        .products-section {
+            padding: 40px;
+            background-color: var(--blanco-puro);
+        }
+        .products-table {
+            width: 80%;
+            margin: 40px auto;
+            background-color: var(--blanco-puro);
+            border-collapse: collapse;
+            border: 2px solid var(--verde-oliva);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .products-table thead {
+            background-color: var(--verde-hoja);
+        }
+        .products-table th, .products-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid var(--verde-oliva);
+        } 
+        .products-table th {
+            color: var(--blanco-puro);
+        }
+        .products-table td {
+            color: var(--verde-hoja);
+        }
+        .products-table img {
+            width: 150px;
+            height: 150px;
+        }
+        .products-table a {
+            color: var(--verde-hoja);
+            text-decoration: underline;
+        }
+        .products-table a:hover {
+            color: var(--verde-oliva);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="logo_banner_2.0.png" class="logo-nav" alt="Logo de MAHACAM">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="somos.html">Quiénes Somos</a></li>
+            <li><a href="modelocanvas.html">Modelo Canvas</a></li>
+            <li><a href="productos.html">Productos</a></li>
+        </ul>
+    </nav> 
+
+    <main>
+        <section class="products-section">
+            <h2 class="main-title">Nuestros Productos</h2>
+            <table class="products-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="Productos.jpg" alt="Jabón Natural"></td>
+                        <td>Jabón natural hecho a mano, ideal para todo tipo de piel, elaborado con Miel y Almendras.</td>
+                        <td>$15.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="logo.png" alt="Jabón de Lavanda"></td>
+                        <td>Jabón artesanal, perfecto para relajar la piel y los sentidos.</td>
+                        <td>$18.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="instructivo.png" alt="Instructivo Jabones"></td>
+                        <td>Instructivo completo para la creación y uso de nuestros jabones artesanales.</td>
+                        <td><a href="instructivo-jabones.pdf" target="_blank">Descargar Instructivo</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
