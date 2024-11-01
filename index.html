@@ -3,116 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MAHACAM</title>
-    <meta name="description" content="MAHACAM - Jabones artesanales">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        :root {
-            --verde-hoja: #8aae7c;
-            --verde-oliva: #b9cc8a;
-            --blanco-puro: #ffffff;
-        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
             margin: 0;
             padding: 0;
         }
-        nav {
-            background-color: var(--verde-oliva);
-            padding: 10px;
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(wallpaper.1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            min-height: 70vh;
+            padding: 50px 0 0 0;
+            position: relative;
+        }
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-content {
+            text-align: center;
+        }
+        .header-txt h1 {
+            font-size: 100px;
+            font-family: 'Satisfy', cursive;
+            color: white;
+            line-height: 1;
+            margin-bottom: 15px;
+        }
+        .header-txt p {
+            font-size: 35px;
+            color: aliceblue;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .information {
+            margin-top: -50px;
+        }
+        .information-content {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+        .information-c1, .information-2 {
+            padding: 45px;
+            text-align: center;
+            background-color: white;
+            height: 300px;
+        }
+        .information-1 img, .information-2 img {
+            height: 300px;
+            width: 100%;
+        }
+        .our {
+            margin-top: -50px;
+            padding: 250px 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(wallpaper.2.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        .footer {
+            padding: 10px 0;
+            background-color: #2C2C2C;
+        }
+        .footer-content {
             display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
         }
-        li {
-            margin-right: 20px;
+        .footer-content a {
+            font-size: 18px;
+            text-transform: uppercase;
+            color: white;
+            text-align: center; 
         }
-        a {
-            color: rgb(0, 0, 0);
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
             text-decoration: none;
+            display: block;
         }
-        a:hover {
-            text-decoration: underline;
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
         }
-        .logo-nav {
-            width: 150px;
-            height: auto;
-        }
-        .main-title {
-            text-align: center;
-            margin-top: 20px;
-            color: var(--verde-hoja);
-        }
-        #quienes-somos {
-        padding: 30px;
-        border-radius: 10px;
-        margin-top: 20px;
-        text-align: justify;
-        text-size-adjust:es;
-        }
-        h2 {
-            text-align: center;
-            color: var(--verde-hoja);
-        }
-        #contact {
-            background-color: var(--verde-oliva);
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <nav>
-            <img src="logo_banner_2.0.png" class="logo-nav" alt="Logo de MAHACAM">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="somos.html">Quienes Somos</a></li>
-            <li><a href="modelocanvas.html">Modelo Canvas</a></li>
-            <li><a href="productos.html">Productos</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <section class="main-title" id="inicio">
-            <h1>Bienvenido a MAHACAM</h1>
-            <h2>Jabones Artesanales</h2>
-        </section>
-        <br>
-        <center><img height=auto width="200" src="logo.png"></center>  
-        <section id="quienes-somos">
-            <div class="content-container" style="width: 80%; margin: auto;">
-                <center><h2>Nuestra Propuesta</h2></center>
-                <br>
-                <p style="text-align: justify; line-height: 1.6; font-size: 1.1rem;">
-                    Nuestra propuesta se centra en ofrecer productos sostenibles y naturales, elaborados a mano, que son amigables tanto con la piel como con el medio ambiente. A través de nuestros jabones artesanales, buscamos satisfacer las necesidades de aseo personal de una manera responsable y beneficiosa. Además, promovemos la autonomía y la creatividad en la creación de estos productos, al mismo tiempo que fomentamos la generación de ingresos, lo cual contribuye a reducir la dependencia económica.
+    <header class="header">
+        <div class="menu container">
+            <div class="dropdown">
+
+            </div>
+            <label for="menu" style="cursor: pointer;">
+                <img src="wallpaper.1.jpg" class="menu-icono" alt="Menú" style="width: 25px;">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="somos.html">Acerca de nosotros</a></li>
+                    <li><a href="modelocanvas.html">Modelo de negocio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>MAHACAM</h1>
+                <p>"Una idea que alienta"</p>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+    <section class="information container">
+        <div class="information-content">
+            <div class="information-1">
+                <div class="information-c1">
+                    <br>
+                    <h3>Nuestro Objetivo</h3>
+                    <p>Elaborar productos de aseo de la mano de los niños entre 5 y 12 años de la Fundación posada de Moisés, proporcionando el paso a paso para su producción, contribuyendo al sostenimiento de la institución con esta estrategia replicable y de baja inversión.</p>
+                </div>
+                <div class="information-a1">
+                    <br>
+                    <img src="logo.png" alt="Descripción de la imagen">
+                </div>
+            </div>
+            <div class="information-2">
+                <div class="information-b1">
+                    <img src="wallpaper.3.jpg" alt="Descripción de la imagen">
+                </div>
+                <div class="information-c1">
+                    <h3>Nuestra Propuesta</h3>
+                    <p>Nuestra propuesta se centra en ofrecer productos sostenibles y naturales, elaborados a mano, que son amigables tanto con la piel como con el medio ambiente. A través de nuestros jabones artesanales, buscamos satisfacer las necesidades de aseo personal de una manera responsable y beneficiosa. Además, promovemos la autonomía y la creatividad en la creación de estos productos, al mismo tiempo que fomentamos la generación de ingresos, lo cual contribuye a reducir la dependencia económica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <section class="our">
+            <div class="container">
+                <h2 style="color: #FFD700;">Contáctanos</h2>
+                <p style="color: #FFFFFF;">Para consultas y pedidos, contacta con nosotros en:</p> 
+                <p>
+                    <img width="35" height="30" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png" alt="Icono de Email">
+                    <br>
+                    <a href="mailto:mahacamservice@gmail.com" style="color: #FFD700;">mahacamservice@gmail.com</a> 
+                </p>
+                <p>
+                    <img width="45" height="30" src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo-2016.png" alt="Icono de Instagram">
+                    <br>
+                    <a href="https://www.instagram.com/__mahacam__/" target="_blank" style="color: #FFD700;">@__mahacam__</a> 
                 </p>
             </div>
         </section>
-    </main>
-    
-    
-
-    <footer id="contact">
-        <h3>Contáctanos</h3>
-        <p>Para consultas y pedidos, contacta con nosotros en:</p>
-        <p>
-            <img width="35" height="30" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png" alt="Email Icon"><br>
-            <a href="mailto:mahacamservice@gmail.com">mahacamservice@gmail.com</a>
-        </p>
-        <p>
-            <img width="45" height="30" src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo-2016.png" alt="Instagram Icon"><br>
-            <a href="https://www.instagram.com/__mahacam__/profilecard/?igsh=MWF0b2l6enRrd21zZw==" target="_blank">@__mahacam__</a>
-        </p>
     </footer>
+
 </body>
 </html>
 
