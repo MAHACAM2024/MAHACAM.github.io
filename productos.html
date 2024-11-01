@@ -3,105 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Productos - MAHACAM</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>MAHACAM</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        :root {
-            --verde-hoja: #8aae7c;
-            --verde-oliva: #b9cc8a;
-            --blanco-puro: #ffffff;
-        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
             margin: 0;
             padding: 0;
         }
-        nav {
-            background-color: var(--verde-oliva);
-            padding: 10px;
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(wallpaper.1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            min-height: 70vh;
+            padding: 50px 0 0;
+            position: relative;
         }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
         }
-        li {
-            margin-right: 20px;
-        }
-        a {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .logo-nav {
-            width: 150px;
-            height: auto;
-        }
-        .main-title {
+        .header-content {
             text-align: center;
-            margin-top: 20px;
-            color: var(--verde-hoja);
+            color: white;
+        }
+        .header-txt h1 {
+            font-size: 100px;
+            font-family: 'Satisfy', cursive;
+            line-height: 1;
+            margin-bottom: 15px;
         }
         .products-section {
-            padding: 40px;
-            background-color: var(--blanco-puro);
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .main-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #4a4a4a;
         }
         .products-table {
-            width: 80%;
-            margin: 40px auto;
-            background-color: var(--blanco-puro);
+            width: 100%;
             border-collapse: collapse;
-            border: 2px solid var(--verde-oliva);
-            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+            background-color: #fdf6f0; /* Color pastel de fondo */
             border-radius: 10px;
             overflow: hidden;
-        }
-        .products-table thead {
-            background-color: var(--verde-hoja);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid #f0d9d0; /* Borde de la tabla */
         }
         .products-table th, .products-table td {
             padding: 15px;
             text-align: center;
-            border: 1px solid var(--verde-oliva);
-        } 
+            border: 1px solid #f0d9d0; /* Borde de las celdas */
+        }
         .products-table th {
-            color: var(--blanco-puro);
+            background-color: #ffebee; /* Color pastel para encabezados */
+            color: #c2185b; /* Color de texto */
+            font-weight: bold;
         }
         .products-table td {
-            color: var(--verde-hoja);
+            background-color: #fff; /* Color blanco para las celdas */
         }
         .products-table img {
-            width: 150px;
-            height: 150px;
+            max-width: 80px; /* Tamaño de las imágenes */
+            border-radius: 5px;
         }
         .products-table a {
-            color: var(--verde-hoja);
-            text-decoration: underline;
+            color: #c2185b;
+            text-decoration: none;
         }
         .products-table a:hover {
-            color: var(--verde-oliva);
+            text-decoration: underline;
+        }
+        .footer {
+            padding: 10px 0;
+            background-color: #2C2C2C;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .footer-content a {
+            font-size: 18px;
+            text-transform: uppercase;
+            color: white;
+            text-align: center; 
         }
     </style>
 </head>
-
 <body>
-    <nav>
-        <img src="logo_banner_2.0.png" class="logo-nav" alt="Logo de MAHACAM">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="somos.html">Quienes Somos</a></li>
-            <li><a href="modelocanvas.html">Modelo Canvas</a></li>
-            <li><a href="productos.html">Productos</a></li>
-        </ul>
-    </nav> 
+
+    <header class="header">
+        <div class="menu container">
+            <div class="dropdown"></div>
+            <label for="menu" style="cursor: pointer;">
+                <img src="wallpaper.1.jpg" class="menu-icono" alt="Menú" style="width: 25px;">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="somos.html">Acerca de nosotros</a></li>
+                    <li><a href="modelocanvas.html">Modelo de negocio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>MAHACAM</h1>
+            </div>
+        </div>
+    </header>
 
     <main>
         <section class="products-section">
@@ -121,7 +144,7 @@
                         <td>$15.000</td>
                     </tr>
                     <tr>
-                        <td><img src="logo.png" alt="Jabón de Lavanda"></td>
+                        <td><img src="productos_2.jpg" alt="Jabón de Lavanda"></td>
                         <td>Jabón artesanal, perfecto para relajar la piel y los sentidos.</td>
                         <td>$18.000</td>
                     </tr>
@@ -134,5 +157,14 @@
             </table>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>
+                <a href="mailto:mahacamservice@gmail.com">Contacto</a>
+            </p>
+        </div> 
+    </footer>
+
 </body>
 </html>
