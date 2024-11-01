@@ -3,93 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Productos - MAHACAM</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MAHACAM</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        :root {
-            --verde-hoja: #8aae7c;
-            --verde-oliva: #b9cc8a;
-            --blanco-puro: #ffffff;
-        }
-        body {
-            font-family: Arial, sans-serif;
+
+:root {
+    --verde-hoja: #8aae7c;
+    --verde-oliva: #b9cc8a;
+    --blanco-puro: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
             margin: 0;
             padding: 0;
         }
-        nav {
-            background-color: var(--verde-oliva);
-            padding: 10px;
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(wallpaper.1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            min-height: 70vh;
+            padding: 50px 0 0;
+            position: relative;
         }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
             display: flex;
-        }
-        li {
-            margin-right: 20px;
-        }
-        a {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .logo-nav {
-            width: 150px;
-            height: auto;
-        }
-        .main-title {
-            text-align: center;
-            margin-top: 20px;
-            color: var(--verde-hoja);
-        }
-        #contact {
-            background-color: var(--verde-oliva);
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
-        }
-        .content-container {
-            max-width: 800px;
-            margin: 0 auto;
+            align-items: center;
+            justify-content: space-between;
             padding: 20px;
         }
-        #quienes-somos {
-            background-color: var(--blanco-puro);
-            padding: 30px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        p {
-            text-align: justify;
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-        h2 {
+        .header-content {
             text-align: center;
-            color: var(--verde-hoja);
+            color: white;
         }
-        strong {
-            color: var(--verde-oliva);
+        .header-txt h1 {
+            font-size: 100px;
+            font-family: 'Satisfy', cursive;
+            line-height: 1;
+            margin-bottom: 15px;
         }
+
+#quienes-somos {
+    background-color: var(--blanco-puro);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+h2 {
+    text-align: center;
+    color: var(--verde-hoja);
+    margin-top: 20px;
+}
+
+strong {
+    color: var(--verde-oliva);
+}
+
+.footer {
+    padding: 10px 0;
+    background-color: #2C2C2C;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-content a {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center; 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
     </style>
 </head>
 <body>
-    <nav>
-        <img src="logo_banner_2.0.png" class="logo-nav" alt="Logo de MAHACAM"> 
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="somos.html">Quienes Somos</a></li>
-            <li><a href="modelocanvas.html">Modelo Canvas</a></li> 
-            <li><a href="productos.html">Productos</a></li>
-        </ul>
-    </nav> 
+
+    <header class="header">
+        <div class="menu container">
+            <div class="dropdown">
+
+            </div>
+            <label for="menu" style="cursor: pointer;">
+                <img src="wallpaper.1.jpg" class="menu-icono" alt="Menú" style="width: 25px;">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="somos.html">Acerca de nosotros</a></li>
+                    <li><a href="modelocanvas.html">Modelo de negocio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>MAHACAM</h1>
+            </div>
+        </div>
+    </header>
 
     <main>  
         <section id="quienes-somos">
@@ -115,11 +180,32 @@
                     Mahacam no es solo un nombre; es nuestra historia, nuestra unión y nuestro compromiso con ofrecer lo mejor. Cada vez que vean nuestro logo, recuerden que detrás hay cuatro amigos trabajando juntos para hacer realidad nuestros sueños.
                 </p>
                 <h2>Valores de la Marca</h2>
+                <p>
+                    Mahacam se distingue por su enfoque en la calidad, la amistad y el trabajo en equipo. Estos valores están presentes en cada aspecto de nuestra identidad:
+                </p>
                 <p><strong>Calidad:</strong> Nos esforzamos por ofrecer jabones caseros elaborados con ingredientes naturales que cuiden la piel y el medio ambiente.</p>
                 <p><strong>Amistad:</strong> La unión de nuestros nombres representa una conexión genuina que queremos extender a nuestros clientes, creando una comunidad en torno al autocuidado.</p>
                 <p><strong>Sostenibilidad:</strong> Estamos comprometidos con prácticas responsables que minimizan nuestro impacto ambiental, utilizando envases reciclables y métodos de producción éticos.</p>
+
+                <h2>A quien va dirigido</h2>
+                <p>
+                    Esta idea va dirigida a la fundación Posada de Moisés para que ellos creen sus productos y los vendas para obtener beneficios económicos, a quien va dirigido depende de los clientes que adquieran después de la implementación del proyecto.
+                </p>
+                <p>
+                    En caso de que el equipo de trabajo decida implementar de manera personal la idea de negocio se modificaría la propuesta convirtiéndola en una experiencia más personalizada y sensorial. Esto iría dirigido a los adolescentes y adultos jóvenes que son las personas que más se preocupan por su piel y su cuidado emocional.
+                </p>
+
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>
+                <a href="mailto:mahacamservice@gmail.com">Contacto</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
